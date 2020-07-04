@@ -21,8 +21,8 @@
 title: Flora Saramago
 email: flora.saramago@gmail.com
 description: ""
-baseurl: "https://florasaramago.github.io/FloraSaramago/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /FloraSaramago # the subpath of your site, e.g. /blog
+url: https://florasaramago.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: flora_saramago
 github_username:  florasaramago
 
