@@ -59,30 +59,29 @@ input[type=text] {
   }
 
   #tabs {
-    margin: 67px auto 0 auto;
     background: transparent;
-    border:none !important;
+    border: none !important;
     position: absolute;
-    width: 50%;
+    width: 100%;
     bottom: 0;
     margin: 0;
 
     .tab-list {
       height: 45px;
       text-align: center;
-      background:transparent;
+      background: transparent;
       -webkit-padding-start: 0 !important;
-    }
 
-    .tab-list li {
-      display: inline-block;
-      float: none;
-      margin: 0 5px;
-      outline:0;
-    }
+      li {
+        display: inline-block;
+        float: none;
+        margin: 0 5px;
+        outline:0;
+      }
 
-    .ui-tabs-panel {
-      padding: 4em 1.4em;
+      .ui-tabs-panel {
+        padding: 4em 1.4em;
+      }
     }
 
     .tab {
@@ -114,6 +113,26 @@ input[type=text] {
     .active {
       background: #fff;
       border-color: rgba(145, 109, 30, 0.42);
+    }
+
+    .borderless-tab {
+      border: 0;
+      background: transparent;
+      text-align: left;
+      width: auto;
+
+      a {
+        display: inline-block;
+        padding: 0 5px;
+        height: 15px;
+        position: relative;
+        bottom: 10px;
+
+        .social {
+          float: left;
+          width: 40px;
+        }
+      }
     }
   }
 }
@@ -366,6 +385,10 @@ input[type=text] {
           margin:auto;
           padding: 0 1px;
         }
+      }
+
+      .borderless-tab {
+        width: 40px !important;
       }
 
       .pp {

@@ -11,13 +11,32 @@
       <div id="header-contents">
         <h1>Flora Saramago</h1>
         <h2>Web Developer</h2>
+      </div>
 
-        <div id="tabs">
-          <ul class="tab-list">
-            <li class="tab pp"><a href="{{ '/index.html' | relative_url }}">Personal Projects</a></li>
-            <li class="tab pp"><a href="{{ '/resume.html' | relative_url }}">Resume</a></li>
-          </ul>
-        </div>
+      <div id="tabs">
+        <ul class="tab-list">
+          <li class="tab {% if page.name == 'index.html' %} active {% endif %}"><a href="{{ '/index.html' | relative_url }}">Personal Projects</a></li>
+
+          <li class="tab {% if page.name == 'resume.html' %} active {% endif %}"><a href="{{ '/resume.html' | relative_url }}">Resume</a></li>
+
+          <li class="tab borderless-tab">
+            <a href="https://github.com/florasaramago" target="_blank">
+              <img class="social" src="{{ '/assets/images/icon-github.png' | relative_url }}" />
+            </a>
+          </li>
+
+          <li class="tab borderless-tab">
+            <a href="https://twitter.com/flora_saramago" target="_blank">
+              <img class="social" src="{{ '/assets/images/icon-twitter.png' | relative_url }}" />
+            </a>
+          </li>
+
+          <li class="tab borderless-tab">
+            <a href="https://linkedin.com/pub/flora-saramago/24/439/b79" target="_blank">
+              <img class="social" src="{{ '/assets/images/icon-linkedin.png' | relative_url }}" />
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
 
