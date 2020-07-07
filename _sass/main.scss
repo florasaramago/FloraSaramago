@@ -334,7 +334,7 @@ input[type=text] {
 
   /*----------- MOBILE -----------*/
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 850px) {
 
   /*----------- MAIN -----------*/
   #header {
@@ -399,41 +399,42 @@ input[type=text] {
   }
 
   #contents {
-    max-width: 980px !important;
+    max-width: 850px !important;
   }
 
   /*----------- PROJECTS -----------*/
 
   #projects {
     .project {
-      margin: 50px auto !important;
+      margin: 0 auto 140px auto;
+      width: 85%;
 
       .thumb {
-        display:block !important;
-        text-align: center !important;
+        display: block;
+        height: auto;
 
         a {
           img {
-            width: 290px !important;
-            margin-bottom: 30px !important;
+            width: 100%;
+            margin-bottom: 30px;
           }
         }
       }
 
       .about {
-        display: block !important;
-        width: 290px !important;
-        margin:auto !important;
+        display: block;
+        width: auto;
+        margin: auto;
 
         .name {
           a {
-            font-size: 25px !important;
+            font-size: 25px;
           }
         }
 
         .description {
-          font-size: 18px !important;
-          line-height: 30px !important;
+          font-size: 18px;
+          line-height: 40px;
         }
       }
     }
