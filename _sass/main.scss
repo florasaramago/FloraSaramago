@@ -32,13 +32,17 @@ input[type=text] {
   background: -o-linear-gradient(rgba(241, 232, 217, 0.66), #f1e8d9); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(rgba(241, 232, 217, 0.66), #f1e8d9); /* For Firefox 3.6 to 15 */
   background: linear-gradient(rgba(241, 232, 217, 0.66), #f1e8d9); /* Standard syntax */
-  height:352px;
+  height: 430px;
   padding-top: 50px;
   position: relative;
 
   #header-contents {
-    margin: 60px auto 0 auto;
-    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto 0 auto;
+    width: 50%;
     text-align: center;
 
     h1 {
@@ -113,26 +117,6 @@ input[type=text] {
     .active {
       background: #fff;
       border-color: rgba(145, 109, 30, 0.42);
-    }
-
-    .borderless-tab {
-      border: 0;
-      background: transparent;
-      text-align: left;
-      width: auto;
-
-      a {
-        display: inline-block;
-        padding: 0 5px;
-        height: 15px;
-        position: relative;
-        bottom: 10px;
-
-        .social {
-          float: left;
-          width: 40px;
-        }
-      }
     }
   }
 }
@@ -339,19 +323,20 @@ input[type=text] {
   /*----------- MAIN -----------*/
   #header {
     width: 100%;
-    height: 271px !important;
-    margin: 0 !important;
+    height: 300px;
+    margin: 0;
 
     #header-contents {
-      width: 100% !important;
-      margin: 40px auto 0 auto !important;
+      width: 100%;
+      margin: 15px auto 0 auto;
 
       h1 {
-        font-size: 40px !important;
+        font-size: 37px;
+        margin-bottom: 0;
       }
 
       h2 {
-        font-size: 25px !important;
+        font-size: 23px;
       }
     }
 
@@ -377,7 +362,7 @@ input[type=text] {
 
       .tab {
         height: 40px;
-        width: 90px;
+        width: 150px;
         text-align: center;
         padding-top: 20px;
 
@@ -385,15 +370,6 @@ input[type=text] {
           margin:auto;
           padding: 0 1px;
         }
-      }
-
-      .borderless-tab {
-        width: 40px !important;
-      }
-
-      .pp {
-        height: 50px;
-        padding-top: 10px;
       }
     }
   }
@@ -434,7 +410,7 @@ input[type=text] {
 
         .description {
           font-size: 18px;
-          line-height: 40px;
+          line-height: 30px;
         }
       }
     }
