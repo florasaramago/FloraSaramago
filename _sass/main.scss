@@ -382,7 +382,7 @@ input[type=text] {
 
   #projects {
     .project {
-      margin: 0 auto 140px auto;
+      margin: 0 auto 100px auto;
       width: 85%;
 
       .thumb {
@@ -419,9 +419,27 @@ input[type=text] {
   /*----------- RESUME -----------*/
 
   #cv {
-    margin: auto !important;
-    margin-top: 50px !important;
-    width: 90% !important;
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+
+    .company {
+      margin-bottom: 50px;
+
+      .company-name {
+        font-size: 21px;
+      }
+
+      .job-description {
+        font-size: 18px;
+
+        .tags {
+          .tag {
+            margin: 6px 1px 0 0;
+          }
+        }
+      }
+    }
   }
 
   .title {
@@ -431,20 +449,6 @@ input[type=text] {
   .text {
     font-size: 18px !important;
     margin-bottom: 18px !important;
-  }
-
-  .company-name {
-    font-size: 21px !important;
-  }
-
-  .job-description {
-    font-size: 18px !important;
-
-    .tags {
-      .tag {
-        margin: 6px 1px 0 0;
-      }
-    }
   }
 
   .date {
