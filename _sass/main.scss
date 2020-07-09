@@ -142,6 +142,16 @@ input[type=text] {
 #cv {
   margin-top: 60px;
 
+  a {
+    color: #0A95B5;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #888;
+    text-decoration: none;
+  }
+
   .info {
     margin: auto;
     margin-bottom: 70px;
@@ -231,18 +241,6 @@ input[type=text] {
         font-size: 15px;
       }
     }
-  }
-
-  .job-description a {
-    /*color: #368CCF;*/
-    /*color:#14ABCE;*/
-    color: #0A95B5;
-    text-decoration: none;
-  }
-
-  .job-description a:hover {
-    color: #888;
-    text-decoration: none;
   }
 
   .job-info {
